@@ -7,6 +7,7 @@ import * as redisStore from 'cache-manager-redis-store';
 import { WeChatUtil } from './utile/wechat.util';
 import { WechatTemplate } from './modules/template/wechat.template';
 import { TestController } from './controller/test.controller';
+import { WechatMenu } from './modules/menu/wechat.menu';
 
 @Module({
   imports: [CacheModule.register({
@@ -21,6 +22,6 @@ import { TestController } from './controller/test.controller';
     {
       provide: APP_INTERCEPTOR,
       useClass: ErrorsInterceptor
-    }, AppService, WeChatUtil, WechatTemplate],
+    }, AppService, WeChatUtil, WechatTemplate, WechatMenu],
 })
 export class AppModule {}
