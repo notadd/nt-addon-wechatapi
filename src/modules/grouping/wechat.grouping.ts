@@ -89,6 +89,7 @@ export class WechatGrouping {
     return { code: 200, message: '删除用户标签成功!'};
   }
 
+  // 此方法暂时有一个问题，过后解决 get传 json参数bug
   // async queryUserLabelFans(appid: string, parameter: any) {
   //   if (!appid) {
   //     throw new HttpException('appid不存在！！', 500);
