@@ -8,6 +8,7 @@ import { WeChatUtil } from './utile/wechat.util';
 import { WechatTemplate } from './modules/template/wechat.template';
 import { TestController } from './controller/test.controller';
 import { WechatMenu } from './modules/menu/wechat.menu';
+import { WechatGrouping } from './modules/grouping/wechat.grouping';
 
 @Module({
   imports: [CacheModule.register({
@@ -22,6 +23,6 @@ import { WechatMenu } from './modules/menu/wechat.menu';
     {
       provide: APP_INTERCEPTOR,
       useClass: ErrorsInterceptor
-    }, AppService, WeChatUtil, WechatTemplate, WechatMenu],
+    }, AppService, WeChatUtil, WechatTemplate, WechatMenu, WechatGrouping],
 })
 export class AppModule {}
