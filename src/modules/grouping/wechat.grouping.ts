@@ -89,20 +89,6 @@ export class WechatGrouping {
     return { code: 200, message: '删除用户标签成功!'};
   }
 
-  // 此方法暂时有一个问题，过后解决 get传 json参数bug
-  // async queryUserLabelFans(appid: string, parameter: any) {
-  //   if (!appid) {
-  //     throw new HttpException('appid不存在！！', 500);
-  //   }
-  //   const accessToken: string = await this.wechatUtil.ensureAccessToken(appid);
-  //   const url = `https://api.weixin.qq.com/cgi-bin/tags/get?access_token=${accessToken}`;
-  //   const { data } = await this.httpService.get(url).toPromise();
-  //   if (data.errcode) {
-  //     throw new HttpException(data.errmsg, data.errcode);
-  //   }
-  //   return { code: 200, message: '查询菜单成功!', data};
-  // }
-
   /**
    * 批量为用户打标签,标签功能目前支持公众号为用户打上最多20个标签。
    * parameter 格式：{"openid_list" : [//粉丝列表 "ocYxcuAEy30bX0NXmGn4ypqx3tI0", "ocYxcuBt0mRugKZ7tGAHPnUaOW7Y"   ],  "tagid" : 134 }
