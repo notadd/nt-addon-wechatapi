@@ -3,6 +3,7 @@ import { WeChatUtil } from '../utile/wechat.util';
 import { WechatTemplate } from '../modules/template/wechat.template';
 import { WechatMenu } from '../modules/menu/wechat.menu';
 import { WechatGrouping } from '../modules/grouping/wechat.grouping';
+import { WechatUser } from '../modules/user/wechat.user';
 
 @Controller('test')
 export class TestController {
@@ -15,6 +16,8 @@ export class TestController {
     private readonly wechatMenu: WechatMenu,
     @Inject(WechatGrouping)
     private readonly wechatGrouping: WechatGrouping,
+    @Inject(WechatUser)
+    private readonly wechatUser: WechatUser
   ) {}
 
 
@@ -129,6 +132,20 @@ export class TestController {
   async queryUserLabelList(@Req() req, @Body() body: {appid: string, parameter: any}) {
     const {appid, parameter} = body;
     const data = await this.wechatGrouping.queryUserLabelList(appid, parameter);
+    return data;
+  }
+
+  @Post('queryUserInformation')
+  async queryUserInformation(@Req() req, @Body() body: {appid: string, parameter: any}) {
+    const {appid, parameter} = body;
+    const data = await this.wechatUser.queryUserInformation(appid, parameter);
+    return data;
+  }
+
+  @Post('queryUserList')
+  async queryUserList(@Req() req, @Body() body: {appid: string, parameter: any}) {
+    const {appid, parameter} = body;
+    const data = await this.wechatUser.queryUserList(appid, parameter);
     return data;
   }
 }
