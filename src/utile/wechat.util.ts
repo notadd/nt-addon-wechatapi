@@ -57,4 +57,42 @@ export class WeChatUtil {
       return accessToken;
     }
   }
+
+  /**
+   * 生成随机字符串
+   * @returns {Promise<any>}
+   */
+  async generatingRandomNumbers() {
+   return Math.random().toString(36).substr(2, 15);
+  }
+
+  /**
+   * 生成时间戳
+   * @returns {Promise<string>}
+   */
+  async generationTimestamp() {
+    return '' + Math.floor(Date.now() / 1000);
+  }
+
+  /**
+   * 排序查询字符串
+   * @param args
+   * @returns {Promise<any>}
+   */
+  async sortQuery(args: any) {
+    let keys = Object.keys(args);
+    keys = keys.sort();
+    const newArgs = {};
+    for (let i = 0; i < keys.length; i++) {
+      const key = keys[i];
+      newArgs[key.toLowerCase()] = args[key];
+    }
+    let str = '';
+    const newKeys = Object.keys(newArgs);
+    for (let j = 0; j < newKeys.length; j++) {
+      const k = newKeys[j];
+      str += '&' + k + '=' + newArgs[k];
+    }
+    return str.substr(1);
+  }
 }
