@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@nestjs/common@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-5.4.0.tgz#74aa7da0d6931349b0a2cbe813b83ad77c2797ec"
+"@nestjs/common@5.7.4":
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-5.7.4.tgz#32eaf1de87449ab56af7e3a15b9060811150429a"
   dependencies:
     axios "0.18.0"
     cli-color "1.2.0"
@@ -26,9 +26,9 @@
     multer "1.3.0"
     uuid "3.3.2"
 
-"@nestjs/core@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-5.4.0.tgz#0c082ef019b5e435a9330feb3fe0101f3978af4e"
+"@nestjs/core@5.7.4":
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-5.7.4.tgz#f569d112d113e56a370dc563adec99a7224c7241"
   dependencies:
     "@nuxtjs/opencollective" "0.1.0"
     body-parser "1.18.3"
@@ -41,9 +41,9 @@
     path-to-regexp "2.2.1"
     uuid "3.3.2"
 
-"@nestjs/testing@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.4.0.tgz#4728021fc4012243b4dd2ffb4228b59df7770235"
+"@nestjs/testing@5.7.4":
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.4.tgz#418e993416bd0c1b27b3adf14cc7d59f4ff2a622"
   dependencies:
     deprecate "1.0.0"
     optional "0.1.4"
