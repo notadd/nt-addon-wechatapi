@@ -21,8 +21,8 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "@nestjs/common": "6.2.0",
-    "@nestjs/core": "6.2.0",
+    "@nestjs/common": "6.2.1",
+    "@nestjs/core": "6.2.1",
     "reflect-metadata": "0.1.12",
     "rimraf": "2.6.3",
     "rxjs": "6.5.2",
@@ -30,7 +30,7 @@
     "snyk": "1.165.1"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.2.0",
+    "@nestjs/testing": "6.2.1",
     "@types/express": "4.16.1",
     "@types/jest": "24.0.13",
     "@types/node": "10.14.7",
