@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -29,3 +29,19 @@ patch:
         patched: '2019-07-04T01:25:49.965Z'
     - snyk > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-07-04T01:25:49.965Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-12-28T09:28:58.630Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-12-28T09:28:58.630Z'

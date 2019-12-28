@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "dependencies": {
     "@nestjs/common": "6.2.2",
@@ -27,7 +27,7 @@
     "rimraf": "2.6.3",
     "rxjs": "6.5.2",
     "typescript": "3.4.5",
-    "snyk": "^1.189.0"
+    "snyk": "^1.266.0"
   },
   "devDependencies": {
     "@nestjs/testing": "6.2.2",
