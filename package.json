@@ -21,8 +21,8 @@
     "prepublish": "yarn run snyk-protect"
   },
   "dependencies": {
-    "@nestjs/common": "6.2.2",
-    "@nestjs/core": "6.2.2",
+    "@nestjs/common": "7.5.0",
+    "@nestjs/core": "7.5.5",
     "reflect-metadata": "0.1.12",
     "rimraf": "2.6.3",
     "rxjs": "6.5.2",
