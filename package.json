@@ -24,10 +24,10 @@
     "@nestjs/common": "6.2.2",
     "@nestjs/core": "6.2.2",
     "reflect-metadata": "0.1.12",
-    "rimraf": "2.6.3",
+    "rimraf": "4.3.1",
     "rxjs": "6.5.2",
     "typescript": "3.4.5",
-    "snyk": "^1.266.0"
+    "snyk": "^1.996.0"
   },
   "devDependencies": {
     "@nestjs/testing": "6.2.2",
